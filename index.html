@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MereyDev - Soluciones de Software</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="py-4 shadow-lg relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">
+                <a href="#" class="flex items-center">
+                    <embed src="./img/mereydev_logo.svg" type="image/svg+xml" class="logo-svg" />
+                </a>
+            </h1>
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn md:hidden text-white focus:outline-none" aria-label="Toggle navigation">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+                    <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+                    <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+                    <li><a href="#equipo" class="hover:underline">Equipo</a></li>
+                    <li><a href="#portafolio" class="hover:underline">Portafolio</a></li>
+                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation (hidden by default) -->
+        <nav class="mobile-nav hidden">
+            <ul class="flex flex-col w-full">
+                <li><a href="#inicio" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Inicio</a></li>
+                <li><a href="#nosotros" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Nosotros</a></li>
+                <li><a href="#servicios" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Servicios</a></li>
+                <li><a href="#equipo" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Equipo</a></li>
+                <li><a href="#portafolio" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Portafolio</a></li>
+                <li><a href="#contacto" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative py-20 md:py-32 text-center overflow-hidden hero-section">
+        <!-- Background gradient or subtle pattern for visual interest -->
+        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-30"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+                Innovación y Soluciones Tecnológicas            
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+                Transformamos tus ideas en soluciones digitales efectivas. Desde el desarrollo de software a medida hasta la consultoría IT, estamos aquí para llevar tu proyecto al siguiente nivel.
+            </p>
+            <button
+                class="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hero-button"
+                onmouseover="this.style.backgroundColor='var(--buttonHoverBg)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';"
+                onmouseout="this.style.backgroundColor='var(--accentColor)'; this.style.boxShadow='none';"
+            >
+                Empieza Tu Proyecto Hoy
+            </button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-8">Quiénes Somos</h3>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10">
+            MereyDev nace de la experiencia, evolucionando para enfocarse en el desarrollo integral de software. Somos un equipo apasionado por la tecnología, dedicado a entregar software de alta calidad y escalable, a través de consultoría IT y soluciones gestionadas de outsourcing.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="card">
+                    <div class="icon-emoji">💡</div> <!-- Lightbulb emoji -->
+                    <h4>Innovación</h4>
+                    <p class="text-md">Exploramos constantemente nuevas tecnologías para ofrecer soluciones a la vanguardia.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-emoji">🔒</div> <!-- Lock emoji -->
+                    <h4>Seguridad</h4>
+                    <p class="text-md">Implementamos las mejores prácticas de seguridad en cada etapa del desarrollo.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-emoji">🤝</div> <!-- Handshake emoji -->
+                    <h4>Colaboración</h4>
+                    <p class="text-md">Trabajamos codo a codo con nuestros clientes para superar sus expectativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-8">Nuestros Servicios</h3>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10">
+                Ofrecemos soluciones de desarrollo de software flexibles, adaptadas a tus necesidades, desde el soporte continuo hasta la creación de proyectos a medida.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Service Card 1: Desarrollo Web - Proyectos desde Cero -->
+                <div class="card">
+                    <div class="icon-emoji">💻</div>
+                    <h4>Desarrollo Web (Desde Cero)</h4>
+                    <p class="text-md">Creamos sitios y aplicaciones web personalizadas, robustas y seguras, desde la fase de ideación hasta el lanzamiento.</p>
+                </div>
+                <!-- Service Card 2: Aplicaciones Móviles - Proyectos desde Cero -->
+                <div class="card">
+                    <div class="icon-emoji">📱</div>
+                    <h4>Aplicaciones Móviles (Desde Cero)</h4>
+                    <p class="text-md">Diseñamos y desarrollamos aplicaciones nativas e híbridas innovadoras para iOS y Android.</p>
+                </div>
+                <!-- Service Card 3: Soluciones Gestionadas - Outsourcing -->
+                <div class="card">
+                    <div class="icon-emoji">🏢</div> <!-- Building emoji for outsourcing -->
+                    <h4>Outsourcing & Staff Augmentation</h4>
+                    <p class="text-md">Proporcionamos equipos de desarrollo expertos para complementar tu personal o gestionar proyectos completos.</p>
+                </div>
+                <!-- Service Card 4: Migración y Optimización - Soluciones Gestionadas -->
+                <div class="card">
+                    <div class="icon-emoji">🚀</div>
+                    <h4>Migración y Optimización Cloud</h4>
+                    <p class="text-md">Gestionamos la migración de tus sistemas a la nube y optimizamos tu infraestructura existente para eficiencia.</p>
+                </div>
+                <!-- Service Card 5: Auditorías de Seguridad - Soluciones Gestionadas -->
+                <div class="card">
+                    <div class="icon-emoji">🛡️</div>
+                    <h4>Auditorías y Consultoría de Seguridad</h4>
+                    <p class="text-md">Evaluamos y fortalecemos la postura de seguridad de tu software y sistemas.</p>
+                </div>
+                <!-- Service Card 6: Mantenimiento y Soporte - Soluciones Gestionadas -->
+                <div class="card">
+                    <div class="icon-emoji">⚙️</div>
+                    <h4>Mantenimiento y Soporte Continuo</h4>
+                    <p class="text-md">Aseguramos el funcionamiento óptimo de tus aplicaciones con soporte y mantenimiento proactivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Equipo Section -->
+    <section id="equipo" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-8">Conoce a Nuestro Equipo</h3>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10">
+                Somos un grupo diverso de expertos apasionados por el desarrollo de software y la seguridad. Juntos, convertimos tus ideas en realidad.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
+                <!-- Team Member 1 -->
+                <div class="card team-member">
+                    <img src="./img/profile_cm.png" alt="[Image of Team Member 1]" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2F4F4F/48BB78?text=Error';" />
+                    <h4>Christian Marquez</h4>
+                    <p class="subtitle">Software Developer & Cybersecurity Analyst</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="card team-member">
+                    <img src="./img/profile_aa.png" alt="[Image of Team Member 2]" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2F4F4F/48BB78?text=Error';" />
+                    <h4>Alejandro Abreu</h4>
+                    <p class="subtitle">Front-End Developer & UI/UX Designer</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="card team-member">
+                    <img src="./img/profile_aml.jpeg" alt="[Image of Team Member 4]" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2F4F4F/48BB78?text=Error';" />
+                    <h4>Aurelio ML</h4>
+                    <p class="subtitle">Software Engineer & Artificial Intelligence</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="card team-member">
+                    <img src="./img/profile_ap.jpeg" alt="[Image of Team Member 1]" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2F4F4F/48BB78?text=Error';" />
+                    <h4>Anthony Peña</h4>
+                    <p class="subtitle">IT Helpdesk & DevOps</p>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="card team-member">
+                    <img src="./img/profile_bc.png" alt="[Image of Team Member 2]" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2F4F4F/48BB78?text=Error';" />
+                    <h4>Barbara Chacin</h4>
+                    <p class="subtitle">3D Designer & .NET Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Section -->
+    <section id="portafolio" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-8">Nuestro Portafolio</h3>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10">
+                Descubre algunos de nuestros proyectos más destacados, que abarcan desde soluciones gestionadas hasta desarrollos innovadores desde cero.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Portfolio Item 1 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="./img/DatingApp_Project.png" alt="[Image of Project 1]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>Plataforma de E-commerce B2B</h4>
+                        <p class="subtitle">Solución Gestionada</p>
+                        <p class="description">Optimización y mantenimiento continuo de una plataforma de comercio electrónico de alto tráfico para una empresa global.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="https://placehold.co/400x250/2F4F4F/48BB78?text=Project2" alt="[Image of Project 2]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>App Móvil de Salud Personalizada</h4>
+                        <p class="subtitle">Proyecto desde Cero</p>
+                        <p class="description">Desarrollo de una aplicación móvil innovadora para el seguimiento de la salud y el bienestar, con IA integrada.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="https://placehold.co/400x250/2F4F4F/48BB78?text=Project3" alt="[Image of Project 3]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>Sistema de Gestión de Clientes (CRM)</h4>
+                        <p class="subtitle">Solución Gestionada</p>
+                        <p class="description">Modernización y soporte de un CRM legado, mejorando su rendimiento y añadiendo nuevas funcionalidades.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="https://placehold.co/400x250/2F4F4F/48BB78?text=Project4" alt="[Image of Project 4]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>Plataforma Educativa Gamificada</h4>
+                        <p class="subtitle">Proyecto desde Cero</p>
+                        <p class="description">Creación de una plataforma de aprendizaje interactiva con elementos de gamificación para estudiantes universitarios.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="https://placehold.co/400x250/2F4F4F/48BB78?text=Project5" alt="[Image of Project 5]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>Integración de Microservicios para Fintech</h4>
+                        <p class="subtitle">Solución Gestionada</p>
+                        <p class="description">Desarrollo e integración de nuevos microservicios para una aplicación financiera existente.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 -->
+                <div class="card portfolio-item overflow-hidden">
+                    <img src="https://placehold.co/400x250/2F4F4F/48BB78?text=Project6" alt="[Image of Project 6]" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2F4F4F/48BB78?text=Error';" />
+                    <div class="p-6">
+                        <h4>Herramienta de Análisis de Datos IoT</h4>
+                        <p class="subtitle">Proyecto desde Cero</p>
+                        <p class="description">Creación de un dashboard interactivo para visualizar y analizar datos de sensores IoT en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-8">Contáctanos</h3>
+            <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10">
+                ¿Listo para llevar tu proyecto al siguiente nivel con MereyDev? Ya sea una solución gestionada o un proyecto innovador desde cero, ¡Ponte en contacto con nosotros!
+            </p>
+            <form class="max-w-xl mx-auto space-y-6">
+                <input
+                    type="text"
+                    placeholder="Tu Nombre"
+                    class="w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-75"
+                />
+                <input
+                    type="email"
+                    placeholder="Tu Correo Electrónico"
+                    class="w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-75"
+                />
+                <textarea
+                    placeholder="Tu Mensaje"
+                    rows="6"
+                    class="w-full p-4 rounded-lg resize-y focus:outline-none focus:ring-2 focus:ring-opacity-75"
+                ></textarea>
+                <button
+                    type="submit"
+                    class="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hero-button"
+                    onmouseover="this.style.backgroundColor='var(--buttonHoverBg)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';"
+                    onmouseout="this.style.backgroundColor='var(--accentColor)'; this.style.boxShadow='none';"
+                >
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="currentYear"></span> MereyDev. Todos los derechos reservados.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 mt-4">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Handle mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.add('hidden');
+            });
+        });
+
+        // Optional: Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Basic form submission handling (for demonstration, won't send data)
+        document.querySelector('#contacto form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Using a custom alert for better UI experience and to avoid browser's default alert
+            const messageBox = document.createElement('div');
+            messageBox.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: var(--secondaryBg);
+                color: var(--textColor);
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                z-index: 1000;
+                text-align: center;
+                max-width: 90%; /* Adjusted for better mobile fit */
+                width: fit-content;
+            `;
+            messageBox.innerHTML = `
+                <p>¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+                <button onclick="this.parentNode.remove()" style="
+                    background-color: var(--accentColor);
+                    color: var(--primaryBg);
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    border: none;
+                ">Cerrar</button>
+            `;
+            document.body.appendChild(messageBox);
+            this.reset(); // Clear the form
+        });
+    </script>
+</body>
+</html>
