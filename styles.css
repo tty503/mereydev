@@ -103,11 +103,6 @@ section p {
     text-align: center;
     padding: 1.5rem; /* p-6 */
 }
-.card .icon-emoji {
-    font-size: 3.75rem; /* text-6xl */
-    margin-bottom: 1rem; /* mb-4 */
-    color: var(--accentColor);
-}
 .card h4 {
     font-weight: 600; /* font-semibold */
     margin-bottom: 0.75rem; /* mb-3 */
@@ -228,4 +223,17 @@ footer a:hover {
     width: 300px; /* Ajusta el tamaño según sea necesario */
     height: auto; /* Mantiene la proporción */
     background-color: transparent; /* Asegura que el fondo sea transparente */
+}
+.logo-icon {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+}
+
+
+/* Borrar al cambiar todos los iconos */
+.card .icon-emoji {
+    font-size: 3.75rem; /* text-6xl */
+    margin-bottom: 1rem; /* mb-4 */
+    color: var(--accentColor);
 }
