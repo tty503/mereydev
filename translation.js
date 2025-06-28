@@ -190,7 +190,6 @@ function setLanguage(lang) {
         }
     });
 
-    // --- NUEVA LÓGICA PARA EL ENLACE DEL BOTÓN ---
     const heroButtonLink = document.getElementById('heroButtonLink');
     if (heroButtonLink && translations[lang] && translations[lang]['form_link_url']) {
         heroButtonLink.href = translations[lang]['form_link_url'];
