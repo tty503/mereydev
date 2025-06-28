@@ -75,7 +75,8 @@ const translations = {
         contact_description: "¿Listo para llevar tu proyecto al siguiente nivel con MereyDev? Ya sea una solución gestionada o un proyecto innovador desde cero, ¡Ponte en contacto con nosotros!",
         contact_form_success: "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
         contact_form_close: "Cerrar",
-        footer_text: "&copy; <span id='currentYear'></span> MereyDev. Todos los derechos reservados."
+        footer_text: "&copy; <span id='currentYear'></span> MereyDev. Todos los derechos reservados.",
+        form_link_url: "https://docs.google.com/forms/d/e/1FAIpQLSeLtBauJeSVT_WbJR0O_sSm3HRkyBLT-Am9aFPmSa5FOB_L1g/viewform?usp=dialog"
     },
     en: {
         page_title: "MereyDev - Software Solutions",
@@ -152,9 +153,11 @@ const translations = {
         contact_description: "Ready to take your project to the next level with MereyDev? Whether it's a managed solution or an innovative project from scratch, get in touch with us!",
         contact_form_success: "Thank you for your message! We will get back to you soon.",
         contact_form_close: "Close",
-        footer_text: "&copy; <span id='currentYear'></span> MereyDev. All rights reserved."
+        footer_text: "&copy; <span id='currentYear'></span> MereyDev. All rights reserved.",
+        form_link_url: "https://docs.google.com/forms/d/e/1FAIpQLScOKq5YxT918Q2KaLIvbeHGpWRNGtt4bLMR8Hi7HnUj5FjkIw/viewform?usp=dialog"
     }
 };
+
 
 // Function to set the language
 function setLanguage(lang) {
@@ -186,6 +189,12 @@ function setLanguage(lang) {
             }
         }
     });
+
+    // --- NUEVA LÓGICA PARA EL ENLACE DEL BOTÓN ---
+    const heroButtonLink = document.getElementById('heroButtonLink');
+    if (heroButtonLink && translations[lang] && translations[lang]['form_link_url']) {
+        heroButtonLink.href = translations[lang]['form_link_url'];
+    }
 
     // Store selected language in localStorage
     localStorage.setItem('selectedLanguage', lang);
