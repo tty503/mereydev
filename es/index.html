@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="page_title">MEREYDev - Soluciones de Software</title>
+
+    <meta name="author" content="MEREYDev">
+    <meta name="description" data-key="meta_description" content="MEREYDev ofrece soluciones de desarrollo de software a medida, consultoría IT y servicios de outsourcing. Transformamos tus ideas en realidad digital.">
+    <meta name="keywords" data-key="meta_keywords" content="desarrollo de software, consultoría IT, outsourcing de software, aplicaciones web, aplicaciones móviles, ciberseguridad, migración cloud, mantenimiento de software, desarrollo a medida, Venezuela, América Latina">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mereydev.com/"> 
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mereydev.com/"> 
+    <meta property="og:title" data-key="og_title" content="MEREYDev - Soluciones de Software Personalizadas">
+    <meta property="og:description" data-key="og_description" content="Transformamos tus ideas en soluciones digitales efectivas: desarrollo web, móvil, consultoría y outsourcing.">
+    <meta property="og:image" content="https://mereydev.com/img/mereydev_logo.png">
+
+
+    <link rel="alternate" hreflang="x-default" href="https://mereydev.com/">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/main.css">
+|
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://mereydev.com/img/favicon.ico" type="image/x-icon">
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RMDV5T746V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RMDV5T746V');
+</script>
+
+<body>
+    <header class="py-4 shadow-lg relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">
+                <a href="#inicio" class="flex items-center" aria-label="MEREYDev - Inicio">
+                    <embed src="../img/mereydev_logo.svg" type="image/svg+xml" class="logo-svg" alt="MEREYDev Logo - Desarrollo de Software y Consultoría IT" />
+                </a>
+            </h1>
+            <button class="mobile-menu-btn md:hidden text-white focus:outline-none" aria-label="Toggle navigation">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <nav class="desktop-nav hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:underline" data-key="nav_home">Inicio</a></li>
+                    <li><a href="#nosotros" class="hover:underline" data-key="nav_about">Nosotros</a></li>
+                    <li><a href="#servicios" class="hover:underline" data-key="nav_services">Servicios</a></li>
+                    </ul>
+            </nav>
+
+            <div class="flex items-center space-x-6 mr-4 md:mr-0">
+                <li><a href="https://mereydev.com/es/" class="language-switcher px-3 py-1 rounded-full text-sm font-semibold border-2 border-accentColor hover:bg-accentColor hover:text-primaryBg transition-all">ES</a></li>
+                <li><a href="https://mereydev.com/en/" class="language-switcher px-3 py-1 rounded-full text-sm font-semibold border-2 border-accentColor hover:bg-accentColor hover:text-primaryBg transition-all">EN</a></li>
+            </div>
+        </div>
+
+        <nav class="mobile-nav hidden md:hidden absolute top-full left-0 w-full bg-secondaryBg z-20 shadow-lg py-4 rounded-b-lg">
+            <ul class="flex flex-col w-full text-center">
+                <li><a href="#inicio" class="block py-2 px-4 hover:bg-primaryBg rounded-md" data-key="nav_home">Inicio</a></li>
+                <li><a href="#nosotros" class="block py-2 px-4 hover:bg-primaryBg rounded-md" data-key="nav_about">Nosotros</a></li>
+                <li><a href="#servicios" class="block py-2 px-4 hover:bg-primaryBg rounded-md" data-key="nav_services">Servicios</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="relative py-20 md:py-32 text-center overflow-hidden hero-section">
+        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black opacity-30"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6" data-key="hero_title">
+                Innovación y Soluciones Tecnológicas para tu Negocio
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto" data-key="hero_description">
+                Transformamos tus ideas en soluciones digitales efectivas. Desde el desarrollo de software a medida hasta la consultoría IT especializada, estamos aquí para llevar tu proyecto al siguiente nivel con calidad y escalabilidad.
+            </p>
+            <a id="heroButtonLink" href="https://docs.google.com/forms/d/e/1FAIpQLSeLtBauJeSVT_WbJR0O_sSm3HRkyBLT-Am9aFPmSa5FOB_L1g/viewform?usp=dialog" class="inline-block" target="_self">
+                <button
+                    class="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hero-button"
+                    onmouseover="this.style.backgroundColor='var(--buttonHoverBg)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';"
+                    onmouseout="this.style.backgroundColor='var(--accentColor)'; this.style.boxShadow='none';"
+                    data-key="hero_button" >
+                    Explora Nuestros Servicios
+                </button>
+            </a>
+        </div>
+    </section>
+
+    
+
+    <section id="nosotros" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8" data-key="about_title">Quiénes Somos en MEREYDev: Tu Socio en Desarrollo de Software</h2>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10" data-key="about_description">
+            En MEREYDev, fusionamos experiencia y pasión por la tecnología para ofrecer soluciones integrales de desarrollo de software. Somos un equipo dedicado a construir software de alta calidad y escalable, complementado con consultoría IT estratégica y servicios gestionados de outsourcing que impulsan el éxito de tu negocio.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="card">
+                    <embed src="../img/bombillo.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="about_card1_title">Innovación Constante en Cada Proyecto</h3>
+                    <p class="text-md" data-key="about_card1_description">Exploramos y adoptamos las últimas tecnologías para ofrecer soluciones a la vanguardia, garantizando tu competitividad.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/candado.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="about_card2_title">Seguridad Robusta para tus Aplicaciones</h3>
+                    <p class="text-md" data-key="about_card2_description">Implementamos las mejores prácticas de seguridad en cada fase del desarrollo, protegiendo tus datos y operaciones.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/apreton.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="about_card3_title">Colaboración Estratégica con Nuestros Clientes</h3>
+                    <p class="text-md" data-key="about_card3_description">Trabajamos estrechamente contigo, construyendo relaciones sólidas para superar tus expectativas y alcanzar objetivos compartidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8" data-key="services_title">Nuestros Servicios de Desarrollo de Software y Consultoría</h2>
+            <p class="text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10" data-key="services_description">
+                Ofrecemos un portafolio completo de soluciones de desarrollo de software flexibles, diseñadas para adaptarse a tus necesidades específicas. Desde el soporte continuo hasta la creación de proyectos a medida, somos tu socio tecnológico.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="card">
+                    <embed src="../img/laptop.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service1_title">Desarrollo Web Personalizado (Desde Cero)</h3>
+                    <p class="text-md" data-key="service1_description">Creamos sitios y aplicaciones web a medida, robustas y seguras, cubriendo desde la ideación hasta el lanzamiento y más allá.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/smartphone.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service2_title">Desarrollo de Aplicaciones Móviles Nativas e Híbridas</h3>
+                    <p class="text-md" data-key="service2_description">Diseñamos y desarrollamos aplicaciones móviles innovadoras para iOS y Android, ofreciendo experiencias de usuario excepcionales.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/team.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service3_title">Outsourcing de Equipos y Staff Augmentation</h3>
+                    <p class="text-md" data-key="service3_description">Proporcionamos equipos de desarrollo expertos y altamente capacitados para complementar tu personal o gestionar proyectos completos de forma eficiente.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/cloud.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service4_title">Migración y Optimización de Infraestructura Cloud</h3>
+                    <p class="text-md" data-key="service4_description">Gestionamos la migración segura de tus sistemas a la nube y optimizamos tu infraestructura existente para maximizar la eficiencia y el rendimiento.</p>
+                </div>
+                <div class="card">
+                    <embed src="../img/escudo.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service5_title">Auditorías de Seguridad y Consultoría Ciberseguridad</h3>
+                    <p class="text-md" data-key="service5_description">Evaluamos exhaustivamente la postura de seguridad de tu software y sistemas, ofreciendo recomendaciones estratégicas para fortalecer tu protección.</p>
+                </div>
+                <div class="card">
+                     <embed src="../img/mantenimiento.svg" type="image/svg+xml" class="logo-icon" />
+                    <h3 data-key="service6_title">Mantenimiento y Soporte Continuo de Software</h3>
+                    <p class="text-md" data-key="service6_description">Aseguramos el funcionamiento óptimo y la evolución de tus aplicaciones con servicios de soporte y mantenimiento proactivo y reactivo.</p>
+                </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p data-key="footer_text">&copy; <span id="currentYear"></span> MEREYDev. Todos los derechos reservados.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 mt-4">
+                <a href="https://www.facebook.com/mereydev" target="_blank" rel="noopener noreferrer" aria-label="Facebook de MEREYDev">
+                <img src="../img/facebook.png" alt="Icono de Facebook" class="h-6 w-6">
+            </a>
+            <a href="https://www.instagram.com/mereydev" target="_blank" rel="noopener noreferrer" aria-label="Instagram de MEREYDev">
+                <img src="../img/instagram.png" alt="Icono de Instagram" class="h-6 w-6">
+            </a>
+            <a href="https://x.com/mereydev" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) de MEREYDev">
+                <img src="../img/twitter.png" alt="Icono de X (Twitter)" class="h-6 w-6">
+            </a>
+            <a href="https://www.linkedin.com/company/mereydev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de MEREYDev">
+                <img src="../img/linkedin.png" alt="Icono de LinkedIn" class="h-6 w-6">
+            </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

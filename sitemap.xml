@@ -4,26 +4,68 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
+  <url>            
+  <loc>https://mereydev.com/es/</loc>
+  <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+  <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mereydev.com/en/"
+                />
+  <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://mereydev.com/"
+                />
+  </url>
 
+  <url>
+  <loc>https://mereydev.com/en/</loc>
+  <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+  <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://mereydev.com/es/"
+                />
+  <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://mereydev.com/"
+                />
+  </url>
+
+  <url>
   <loc>https://mereydev.com/</loc>
-  <lastmod>2025-06-27T17:14:35+00:00</lastmod>
+  <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  </url>
 
-  <loc>https://www.facebook.com/mereydevlatam/</loc>
-  <lastmod>2025-06-27T17:14:35+00:00</lastmod>
+  <url>
+  <loc>https://mereydev.com/es/#servicios/</loc>
+  <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+  <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mereydev.com/en/#services/"
+                />
+  </url>
 
-  <loc>https://www.facebook.com/mereydev/</loc>
-  <lastmod>2025-06-27T17:14:35+00:00</lastmod>
-
-  <loc>https://www.linkedin.com/company/mereydev</loc>
-  <lastmod>2025-06-27T17:14:35+00:00</lastmod>
-
-  <loc>https://www.linkedin.com/company/mereydevlatam</loc>
-  <lastmod>2025-06-27T17:14:35+00:00</lastmod>
-
-  
-  <loc>https://www.instagram.com/mereydev/</loc>
-  <lastmod>2025-06-28T17:14:35+00:00</lastmod>
-
-</url>
+  <url>
+  <loc>https://mereydev.com/en/#services/</loc>
+  <lastmod>2025-07-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+  <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://mereydev.com/es/#servicios/"
+                />
+  </url>
 </urlset>
